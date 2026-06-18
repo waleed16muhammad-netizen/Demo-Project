@@ -1,0 +1,24 @@
+name: CI Pipeline - Demo Project
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Code checkout karo
+      uses: actions/checkout@v3
+
+    - name: Hello CI/CD print karo
+      run: echo "Hello! CI/CD Pipeline chal raha hai!"
+
+    - name: Branch ka naam batao
+      run: echo "Branch name = $GITHUB_REF"
+
+    - name: Test pass ho gaya
+      run: echo "Saare tests pass ho gaye!"
