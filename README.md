@@ -1,9 +1,7 @@
-## Login Page Feature
+## Bug Fix in README
 
-This branch contains the login page implementation.
+This branch contains the bug fixing.
 
 ### Features:
-- User login form
-- Email validation
-- Password validation
-- Submit button
+- bug occurs in the README typo
+- we have to fix this bug
